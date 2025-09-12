@@ -1,4 +1,6 @@
-{
+git add .
+git commit -m "fix: import createWebHashHistory for router"
+git push origin main{
   "compilerOptions": {
     "paths": {
       "@/*": ["./src/*"]
