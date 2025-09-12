@@ -6,6 +6,9 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
+  // 關鍵就是這一行，確保 base 的值是您的儲存庫名稱
+  base: '/my-practice/',
+  
   plugins: [
     vue(),
     vueDevTools(),
@@ -13,6 +16,6 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
-    },
-  },
+    }
+  }
 })
