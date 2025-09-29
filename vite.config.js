@@ -17,5 +17,8 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  }
+  },
+  build: {
+    outDir: 'docs' // 2. 設定輸出資料夾名稱為 docs
+  },
 })
